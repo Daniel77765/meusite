@@ -1,0 +1,499 @@
+[
+  {
+    "name": "TechBrasil",
+    "sector": "Tecnologia",
+    "description": "Empresa de tecnologia especializada em soluções inovadoras para transformação digital de empresas brasileiras. Focamos em desenvolvimento de software, consultoria tecnológica e implementação de sistemas corporativos.",
+    "employees": "200-500",
+    "location": "São Paulo, SP",
+    "founded": "2018",
+    "website": "https://techbrasil.com.br",
+    "openJobs": 5,
+    "tagline": "Transformando o futuro através da tecnologia",
+    "mission": "Democratizar a tecnologia e tornar as empresas brasileiras mais competitivas no mercado global.",
+    "vision": "Ser a principal referência em soluções tecnológicas inovadoras no Brasil até 2030.",
+    "values": [
+      "Inovação constante",
+      "Excelência técnica",
+      "Foco no cliente",
+      "Transparência",
+      "Trabalho em equipe"
+    ],
+    "benefits": [
+      "Plano de saúde premium",
+      "Plano odontológico",
+      "Vale refeição",
+      "Vale transporte",
+      "Auxílio home office",
+      "Horário flexível",
+      "Trabalho híbrido",
+      "Programa de treinamento",
+      "Participação nos lucros"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/techbrasil",
+      "instagram": "https://instagram.com/techbrasil",
+      "facebook": "https://facebook.com/techbrasil"
+    }
+  },
+  {
+    "name": "Marketing Pro",
+    "sector": "Marketing",
+    "description": "Agência de marketing digital especializada em estratégias de crescimento para empresas de todos os portes. Oferecemos soluções completas em marketing digital, desde planejamento estratégico até execução e monitoramento de campanhas.",
+    "employees": "50-100",
+    "location": "Rio de Janeiro, RJ",
+    "founded": "2020",
+    "website": "https://marketingpro.com.br",
+    "openJobs": 3,
+    "tagline": "Crescimento através de marketing inteligente",
+    "mission": "Acelerar o crescimento de nossos clientes através de estratégias de marketing eficazes e mensuráveis.",
+    "vision": "Ser reconhecida como a melhor agência de marketing digital do Rio de Janeiro.",
+    "values": [
+      "Resultados mensuráveis",
+      "Criatividade",
+      "Dados orientados",
+      "Parceria com clientes",
+      "Evolução contínua"
+    ],
+    "benefits": [
+      "Plano de saúde",
+      "Vale refeição",
+      "Vale transporte",
+      "Ambiente descontraído",
+      "Certificações pagas",
+      "Happy hour mensal",
+      "Participação em eventos"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/marketing-pro",
+      "instagram": "https://instagram.com/marketingpro"
+    }
+  },
+  {
+    "name": "VendaMais",
+    "sector": "Vendas",
+    "description": "Empresa consolidada no mercado de soluções empresariais com foco em vendas B2B. Oferecemos consultoria comercial, treinamentos de vendas e soluções para automação de processos comerciais.",
+    "employees": "100-200",
+    "location": "Belo Horizonte, MG",
+    "founded": "2015",
+    "website": "https://vendamais.com.br",
+    "openJobs": 4,
+    "tagline": "Potencializando resultados comerciais",
+    "mission": "Ajudar empresas a maximizar seus resultados comerciais através de estratégias e processos eficientes.",
+    "vision": "Ser a principal referência em consultoria comercial no mercado brasileiro.",
+    "values": [
+      "Foco em resultados",
+      "Relacionamentos duradouros",
+      "Ética comercial",
+      "Melhoria contínua",
+      "Espírito empreendedor"
+    ],
+    "benefits": [
+      "Comissão atrativa",
+      "Plano de saúde",
+      "Vale refeição",
+      "Carro da empresa",
+      "Treinamentos constantes",
+      "Prêmios por performance",
+      "Participação nos lucros"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/vendamais"
+    }
+  },
+  {
+    "name": "DesignLab",
+    "sector": "Design",
+    "description": "Estúdio de design especializado em criar experiências digitais inovadoras. Trabalhamos com UX/UI design, branding, identidade visual e desenvolvimento de produtos digitais centrados no usuário.",
+    "employees": "20-50",
+    "location": "São Paulo, SP",
+    "founded": "2019",
+    "website": "https://designlab.com.br",
+    "openJobs": 2,
+    "tagline": "Criando experiências que importam",
+    "mission": "Transformar ideias em experiências digitais memoráveis que geram impacto real para usuários e negócios.",
+    "vision": "Ser reconhecido como o melhor estúdio de design de experiência do Brasil.",
+    "values": [
+      "Design centrado no usuário",
+      "Inovação criativa",
+      "Qualidade excepcional",
+      "Colaboração",
+      "Impacto social"
+    ],
+    "benefits": [
+      "Plano de saúde",
+      "Vale refeição",
+      "Licenças de software premium",
+      "Ambiente criativo",
+      "Horário flexível",
+      "Participação em conferências",
+      "Biblioteca de design"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/designlab",
+      "instagram": "https://instagram.com/designlab",
+      "behance": "https://behance.net/designlab"
+    }
+  },
+  {
+    "name": "FinanceCorpo",
+    "sector": "Financeiro",
+    "description": "Consultoria financeira especializada em soluções corporativas. Oferecemos serviços de controladoria, planejamento financeiro, consultoria fiscal e implementação de sistemas de gestão financeira.",
+    "employees": "100-200",
+    "location": "São Paulo, SP",
+    "founded": "2010",
+    "website": "https://financecorpo.com.br",
+    "openJobs": 6,
+    "tagline": "Excelência em gestão financeira",
+    "mission": "Proporcionar soluções financeiras eficientes que contribuam para o crescimento sustentável de nossos clientes.",
+    "vision": "Ser a principal consultoria financeira corporativa do país.",
+    "values": [
+      "Precisão e confiabilidade",
+      "Ética profissional",
+      "Inovação em processos",
+      "Conhecimento técnico",
+      "Relacionamento de longo prazo"
+    ],
+    "benefits": [
+      "Plano de saúde premium",
+      "Plano odontológico",
+      "Vale refeição",
+      "Vale transporte",
+      "Auxílio educação",
+      "Participação nos lucros",
+      "Certificações profissionais"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/financecorpo"
+    }
+  },
+  {
+    "name": "PeopleFirst",
+    "sector": "Recursos Humanos",
+    "description": "Consultoria especializada em gestão de pessoas e desenvolvimento organizacional. Oferecemos soluções completas em RH, desde recrutamento até desenvolvimento de liderança e cultura organizacional.",
+    "employees": "50-100",
+    "location": "Rio de Janeiro, RJ",
+    "founded": "2017",
+    "website": "https://peoplefirst.com.br",
+    "openJobs": 3,
+    "tagline": "Pessoas em primeiro lugar",
+    "mission": "Desenvolver pessoas e organizações através de soluções inovadoras em gestão de recursos humanos.",
+    "vision": "Ser a consultoria de RH mais respeitada do Brasil por nossa abordagem humanizada.",
+    "values": [
+      "Foco nas pessoas",
+      "Desenvolvimento contínuo",
+      "Diversidade e inclusão",
+      "Ética e transparência",
+      "Inovação em RH"
+    ],
+    "benefits": [
+      "Plano de saúde",
+      "Plano odontológico",
+      "Vale refeição",
+      "Auxílio educação",
+      "Programa de desenvolvimento",
+      "Ambiente colaborativo",
+      "Flexibilidade de horário"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/peoplefirst",
+      "instagram": "https://instagram.com/peoplefirst"
+    }
+  },
+  {
+    "name": "CodeMasters",
+    "sector": "Tecnologia",
+    "description": "Software house especializada em desenvolvimento de soluções enterprise e projetos internacionais. Trabalhamos com as mais modernas tecnologias e metodologias ágeis para entregar software de alta qualidade.",
+    "employees": "100-200",
+    "location": "Curitiba, PR",
+    "founded": "2016",
+    "website": "https://codemasters.com.br",
+    "openJobs": 8,
+    "tagline": "Dominando o código, criando o futuro",
+    "mission": "Desenvolver software de classe mundial que transforme negócios e melhore a vida das pessoas.",
+    "vision": "Ser reconhecida globalmente pela excelência em desenvolvimento de software.",
+    "values": [
+      "Excelência técnica",
+      "Inovação constante",
+      "Trabalho em equipe",
+      "Foco no cliente",
+      "Aprendizado contínuo"
+    ],
+    "benefits": [
+      "Salários acima do mercado",
+      "Trabalho 100% remoto",
+      "Flexibilidade total",
+      "Equipamentos premium",
+      "Treinamentos internacionais",
+      "Projetos globais",
+      "Stock options"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/codemasters",
+      "github": "https://github.com/codemasters"
+    }
+  },
+  {
+    "name": "WebSuccess",
+    "sector": "Marketing",
+    "description": "Agência digital especializada em SEO e marketing de conteúdo. Ajudamos empresas a conquistarem melhores posições nos mecanismos de busca e aumentarem sua visibilidade online.",
+    "employees": "20-50",
+    "location": "Porto Alegre, RS",
+    "founded": "2018",
+    "website": "https://websuccess.com.br",
+    "openJobs": 2,
+    "tagline": "Seu sucesso na web",
+    "mission": "Ajudar empresas a alcançarem o sucesso online através de estratégias eficazes de marketing digital.",
+    "vision": "Ser a agência de SEO mais reconhecida do Sul do Brasil.",
+    "values": [
+      "Resultados comprovados",
+      "Transparência total",
+      "Expertise técnica",
+      "Relacionamento próximo",
+      "Evolução constante"
+    ],
+    "benefits": [
+      "Plano de saúde",
+      "Vale refeição",
+      "Certificações pagas",
+      "Ambiente descontraído",
+      "Ferramentas premium",
+      "Participação em eventos",
+      "Home office flexível"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/websuccess",
+      "instagram": "https://instagram.com/websuccess"
+    }
+  },
+  {
+    "name": "ProjectPro",
+    "sector": "Consultoria",
+    "description": "Consultoria especializada em gestão de projetos e transformação digital. Ajudamos organizações a implementarem mudanças complexas e alcançarem seus objetivos estratégicos através de metodologias comprovadas.",
+    "employees": "50-100",
+    "location": "Brasília, DF",
+    "founded": "2014",
+    "website": "https://projectpro.com.br",
+    "openJobs": 4,
+    "tagline": "Transformando ideias em realidade",
+    "mission": "Capacitar organizações para executarem projetos complexos com excelência e eficiência.",
+    "vision": "Ser a consultoria em gestão de projetos mais respeitada do Centro-Oeste.",
+    "values": [
+      "Excelência em execução",
+      "Metodologia comprovada",
+      "Foco em resultados",
+      "Desenvolvimento de pessoas",
+      "Ética profissional"
+    ],
+    "benefits": [
+      "Plano de saúde premium",
+      "Plano odontológico",
+      "Vale refeição",
+      "Certificações PMP",
+      "Participação nos lucros",
+      "Auxílio educação",
+      "Viagens a trabalho"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/projectpro"
+    }
+  },
+  {
+    "name": "ContabilExpert",
+    "sector": "Contabilidade",
+    "description": "Escritório de contabilidade com mais de 20 anos de experiência no mercado. Oferecemos serviços completos de contabilidade empresarial, consultoria fiscal e planejamento tributário para empresas de todos os portes.",
+    "employees": "50-100",
+    "location": "Salvador, BA",
+    "founded": "2003",
+    "website": "https://contabilexpert.com.br",
+    "openJobs": 3,
+    "tagline": "Expertise contábil que você pode confiar",
+    "mission": "Oferecer soluções contábeis de excelência que contribuam para o sucesso de nossos clientes.",
+    "vision": "Ser o escritório de contabilidade mais respeitado da Bahia.",
+    "values": [
+      "Precisão e confiabilidade",
+      "Atualização constante",
+      "Relacionamento próximo",
+      "Ética profissional",
+      "Conhecimento especializado"
+    ],
+    "benefits": [
+      "Plano de saúde",
+      "Plano odontológico",
+      "Vale refeição",
+      "Vale transporte",
+      "Participação nos lucros",
+      "Cursos de atualização",
+      "Estabilidade profissional"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/contabilexpert"
+    }
+  },
+  {
+    "name": "DataInsights",
+    "sector": "Tecnologia",
+    "description": "Empresa especializada em soluções de business intelligence e analytics. Transformamos dados em insights estratégicos que impulsionam a tomada de decisões e o crescimento dos negócios.",
+    "employees": "20-50",
+    "location": "São Paulo, SP",
+    "founded": "2019",
+    "website": "https://datainsights.com.br",
+    "openJobs": 4,
+    "tagline": "Transformando dados em inteligência",
+    "mission": "Democratizar o acesso a insights de dados para empresas de todos os tamanhos.",
+    "vision": "Ser a principal referência em analytics e business intelligence no Brasil.",
+    "values": [
+      "Dados como verdade",
+      "Simplicidade na complexidade",
+      "Inovação tecnológica",
+      "Foco no cliente",
+      "Aprendizado contínuo"
+    ],
+    "benefits": [
+      "Plano de saúde",
+      "Vale refeição",
+      "Horário flexível",
+      "Treinamentos técnicos",
+      "Ambiente inovador",
+      "Licenças de software",
+      "Home office híbrido"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/datainsights",
+      "medium": "https://medium.com/datainsights"
+    }
+  },
+  {
+    "name": "ShopOnline",
+    "sector": "E-commerce",
+    "description": "Empresa líder em soluções de e-commerce no mercado brasileiro. Oferecemos plataforma completa para vendas online, incluindo desenvolvimento, integração com marketplaces e estratégias de crescimento digital.",
+    "employees": "200-500",
+    "location": "São Paulo, SP",
+    "founded": "2012",
+    "website": "https://shoponline.com.br",
+    "openJobs": 7,
+    "tagline": "Sua loja online de sucesso",
+    "mission": "Capacitar empresas para venderem online com excelência e alcançarem o máximo potencial digital.",
+    "vision": "Ser a plataforma de e-commerce mais utilizada e confiável do Brasil.",
+    "values": [
+      "Foco no cliente",
+      "Inovação contínua",
+      "Qualidade de serviço",
+      "Crescimento sustentável",
+      "Transparência"
+    ],
+    "benefits": [
+      "Plano de saúde",
+      "Plano odontológico",
+      "Vale refeição",
+      "Participação nos lucros",
+      "Desconto em produtos",
+      "Gympass",
+      "Ambiente moderno"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/shoponline",
+      "instagram": "https://instagram.com/shoponline",
+      "facebook": "https://facebook.com/shoponline"
+    }
+  },
+  {
+    "name": "SoftwareHouse",
+    "sector": "Tecnologia",
+    "description": "Casa de software focada no desenvolvimento de soluções inovadoras para empresas de diferentes setores. Combinamos expertise técnica com conhecimento de negócio para entregar produtos que realmente fazem a diferença.",
+    "employees": "100-200",
+    "location": "Florianópolis, SC",
+    "founded": "2015",
+    "website": "https://softwarehouse.com.br",
+    "openJobs": 6,
+    "tagline": "Construindo o futuro através do software",
+    "mission": "Desenvolver software inovador que resolva problemas reais e gere valor para nossos clientes.",
+    "vision": "Ser reconhecida como a software house mais inovadora do Sul do Brasil.",
+    "values": [
+      "Inovação tecnológica",
+      "Qualidade de código",
+      "Foco no usuário",
+      "Trabalho colaborativo",
+      "Evolução contínua"
+    ],
+    "benefits": [
+      "Salários competitivos",
+      "Trabalho remoto",
+      "Flexibilidade de horário",
+      "Ambiente inovador",
+      "Equipamentos de qualidade",
+      "Treinamentos técnicos",
+      "Participação em eventos"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/softwarehouse",
+      "github": "https://github.com/softwarehouse"
+    }
+  },
+  {
+    "name": "BrandMakers",
+    "sector": "Marketing",
+    "description": "Agência de marketing focada em construção de marcas fortes e estratégias de comunicação impactantes. Trabalhamos com branding, campanhas publicitárias e estratégias de marketing integrado.",
+    "employees": "50-100",
+    "location": "Rio de Janeiro, RJ",
+    "founded": "2016",
+    "website": "https://brandmakers.com.br",
+    "openJobs": 5,
+    "tagline": "Fazendo marcas que marcam",
+    "mission": "Criar marcas memoráveis e estratégias de comunicação que conectem empresas e consumidores.",
+    "vision": "Ser a agência de branding mais criativa e eficaz do Rio de Janeiro.",
+    "values": [
+      "Criatividade sem limites",
+      "Estratégia sólida",
+      "Paixão por marcas",
+      "Colaboração criativa",
+      "Resultados mensuráveis"
+    ],
+    "benefits": [
+      "Plano de saúde",
+      "Vale refeição",
+      "Ambiente criativo",
+      "Participação em festivais",
+      "Happy hour semanal",
+      "Biblioteca criativa",
+      "Horário flexível"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/brandmakers",
+      "instagram": "https://instagram.com/brandmakers",
+      "behance": "https://behance.net/brandmakers"
+    }
+  },
+  {
+    "name": "TechStart",
+    "sector": "Tecnologia",
+    "description": "Startup de tecnologia focada em formar novos talentos e desenvolver soluções inovadoras. Acreditamos no poder da educação tecnológica e na criação de oportunidades para jovens desenvolvedores.",
+    "employees": "10-20",
+    "location": "São Paulo, SP",
+    "founded": "2021",
+    "website": "https://techstart.com.br",
+    "openJobs": 3,
+    "tagline": "Iniciando carreiras, criando o futuro",
+    "mission": "Formar novos talentos em tecnologia e criar soluções que impactem positivamente a sociedade.",
+    "vision": "Ser a startup mais reconhecida por formar talentos tech de qualidade no Brasil.",
+    "values": [
+      "Educação transformadora",
+      "Oportunidades para todos",
+      "Inovação social",
+      "Crescimento conjunto",
+      "Impacto positivo"
+    ],
+    "benefits": [
+      "Mentoria especializada",
+      "Ambiente de aprendizado",
+      "Flexibilidade para estudos",
+      "Projetos reais",
+      "Networking profissional",
+      "Possibilidade de efetivação",
+      "Cultura jovem e dinâmica"
+    ],
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/techstart",
+      "instagram": "https://instagram.com/techstart"
+    }
+  }
+]

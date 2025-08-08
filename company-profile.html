@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil da Empresa - EmpregoAki</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">EMPREGOAKI</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">INICIAL</a>
+                <a href="jobs.html" class="nav-link">SOLUÇÕES</a>
+                <a href="companies.html" class="nav-link">EMPREENDIMENTOS</a>
+                <a href="about.html" class="nav-link">ÍNDICES</a>
+                <a href="contact.html" class="nav-link">SOBRE</a>
+                <a href="#" class="nav-link">CADASTRE-SE</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Company Profile Content -->
+    <section class="company-profile">
+        <div class="container">
+            <div class="company-profile-header">
+                <button class="back-button" onclick="history.back()">
+                    <i class="fas fa-arrow-left"></i>
+                    Voltar
+                </button>
+            </div>
+            
+            <div class="company-profile-content" id="company-profile-content">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    Carregando perfil da empresa...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EMPREGOAKI</h3>
+                    <p>Conectando talentos e oportunidades em todo o Brasil.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Candidatos</h4>
+                    <ul>
+                        <li><a href="jobs.html">Buscar Vagas</a></li>
+                        <li><a href="#">Cadastrar Currículo</a></li>
+                        <li><a href="#">Dicas de Carreira</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Empresas</h4>
+                    <ul>
+                        <li><a href="#">Anunciar Vaga</a></li>
+                        <li><a href="companies.html">Perfil da Empresa</a></li>
+                        <li><a href="#">Soluções RH</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EmpregoAki. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const companyName = urlParams.get('name');
+            
+            if (companyName) {
+                loadCompanyProfile(companyName);
+            } else {
+                showError('Empresa não especificada');
+            }
+        });
+
+        async function loadCompanyProfile(companyName) {
+            try {
+                const [companiesResponse, jobsResponse] = await Promise.all([
+                    fetch('companies.json'),
+                    fetch('jobs.json')
+                ]);
+                
+                const companies = await companiesResponse.json();
+                const jobs = await jobsResponse.json();
+                
+                const company = companies.find(c => c.name === companyName);
+                
+                if (company) {
+                    const companyJobs = jobs.filter(j => j.company === companyName);
+                    displayCompanyProfile(company, companyJobs);
+                } else {
+                    showError('Empresa não encontrada');
+                }
+            } catch (error) {
+                console.error('Erro ao carregar perfil da empresa:', error);
+                showError('Erro ao carregar dados da empresa');
+            }
+        }
+
+        function displayCompanyProfile(company, jobs) {
+            document.title = `${company.name} - EmpregoAki`;
+            
+            document.getElementById('company-profile-content').innerHTML = `
+                <div class="company-header">
+                    <div class="company-logo-large">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="company-basic-info">
+                        <h1>${company.name}</h1>
+                        <p class="company-tagline">${company.tagline || 'Empresa comprometida com a excelência'}</p>
+                        <div class="company-meta">
+                            <span><i class="fas fa-industry"></i> ${company.sector}</span>
+                            <span><i class="fas fa-map-marker-alt"></i> ${company.location}</span>
+                            <span><i class="fas fa-users"></i> ${company.employees} funcionários</span>
+                            <span><i class="fas fa-calendar"></i> Fundada em ${company.founded || 'N/A'}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="company-content">
+                    <div class="company-main">
+                        <div class="company-section">
+                            <h2>Sobre a Empresa</h2>
+                            <p>${company.description}</p>
+                            ${company.mission ? `
+                            <h3>Missão</h3>
+                            <p>${company.mission}</p>
+                            ` : ''}
+                            ${company.vision ? `
+                            <h3>Visão</h3>
+                            <p>${company.vision}</p>
+                            ` : ''}
+                            ${company.values && company.values.length > 0 ? `
+                            <h3>Valores</h3>
+                            <ul>
+                                ${company.values.map(value => `<li>${value}</li>`).join('')}
+                            </ul>
+                            ` : ''}
+                        </div>
+
+                        ${company.benefits && company.benefits.length > 0 ? `
+                        <div class="company-section">
+                            <h2>Benefícios</h2>
+                            <div class="benefits-grid">
+                                ${company.benefits.map(benefit => `
+                                    <div class="benefit-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>${benefit}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                        ` : ''}
+
+                        <div class="company-section">
+                            <h2>Vagas Disponíveis (${jobs.length})</h2>
+                            ${jobs.length > 0 ? `
+                                <div class="company-jobs">
+                                    ${jobs.map(job => `
+                                        <div class="job-card">
+                                            <div class="job-card-header">
+                                                <h3><a href="job-detail.html?id=${job.id}">${job.title}</a></h3>
+                                                <span class="job-salary">${job.salary}</span>
+                                            </div>
+                                            <div class="job-card-meta">
+                                                <span><i class="fas fa-map-marker-alt"></i> ${job.location}</span>
+                                                <span><i class="fas fa-clock"></i> ${job.type}</span>
+                                                <span><i class="fas fa-layer-group"></i> ${job.level}</span>
+                                            </div>
+                                            <p class="job-description">${job.description.substring(0, 150)}...</p>
+                                            <div class="job-card-actions">
+                                                <a href="job-detail.html?id=${job.id}" class="view-job-btn">Ver Detalhes</a>
+                                                <button class="apply-btn">Candidatar-se</button>
+                                            </div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            ` : `
+                                <div class="no-jobs">
+                                    <i class="fas fa-briefcase"></i>
+                                    <p>Não há vagas disponíveis no momento.</p>
+                                    <p>Acompanhe o perfil da empresa para ser notificado sobre novas oportunidades.</p>
+                                </div>
+                            `}
+                        </div>
+                    </div>
+
+                    <div class="company-sidebar">
+                        <div class="company-info-card">
+                            <h3>Informações</h3>
+                            <div class="info-item">
+                                <strong>Website:</strong>
+                                <a href="${company.website || '#'}" target="_blank">${company.website || 'N/A'}</a>
+                            </div>
+                            <div class="info-item">
+                                <strong>Setor:</strong>
+                                <span>${company.sector}</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Tamanho:</strong>
+                                <span>${company.employees} funcionários</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Fundação:</strong>
+                                <span>${company.founded || 'N/A'}</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Sede:</strong>
+                                <span>${company.location}</span>
+                            </div>
+                        </div>
+
+                        ${company.socialMedia ? `
+                        <div class="company-social">
+                            <h3>Redes Sociais</h3>
+                            <div class="social-links">
+                                ${company.socialMedia.linkedin ? `<a href="${company.socialMedia.linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a>` : ''}
+                                ${company.socialMedia.facebook ? `<a href="${company.socialMedia.facebook}" target="_blank"><i class="fab fa-facebook"></i></a>` : ''}
+                                ${company.socialMedia.instagram ? `<a href="${company.socialMedia.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>` : ''}
+                                ${company.socialMedia.twitter ? `<a href="${company.socialMedia.twitter}" target="_blank"><i class="fab fa-twitter"></i></a>` : ''}
+                            </div>
+                        </div>
+                        ` : ''}
+
+                        <div class="follow-company">
+                            <button class="follow-btn">
+                                <i class="fas fa-plus"></i>
+                                Seguir Empresa
+                            </button>
+                            <p>Receba notificações sobre novas vagas</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function showError(message) {
+            document.getElementById('company-profile-content').innerHTML = `
+                <div class="error-message">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h2>${message}</h2>
+                    <p>Volte para a página de empresas para encontrar outras oportunidades.</p>
+                    <a href="companies.html" class="cta-button">Ver Empresas</a>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpregoAki - Portal de Empregos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">EMPREGOAKI</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">INICIAL</a>
+                <a href="jobs.html" class="nav-link">SOLUÇÕES</a>
+                <a href="companies.html" class="nav-link">EMPREENDIMENTOS</a>
+                <a href="about.html" class="nav-link">ÍNDICES</a>
+                <a href="contact.html" class="nav-link">SOBRE</a>
+                <a href="#" class="nav-link">CADASTRE-SE</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Somos o <span class="highlight">Empregoaki</span></h1>
+                    <p>Conectamos empresas e talentos em diversas cidades do Brasil. Nossa missão é simples: facilitar o encontro entre quem precisa de um funcionário e quem está pronto para trabalhar.</p>
+                    <p>Se você está procurando uma oportunidade ou quer contratar alguém de forma rápida e direta, está no lugar certo. Aqui, o contato é humano, real e objetivo.</p>
+                    <p>O Empregoaki existe pra acabar com as barreiras entre patrão e colaborador. Sem enrolação, sem complicação – só conexão com quem faz acontecer.</p>
+                    <button class="cta-button" onclick="window.location.href='jobs.html'">VER VAGAS</button>
+                </div>
+                <div class="hero-image">
+                    <svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Illustration matching the reference -->
+                        <circle cx="200" cy="150" r="80" fill="#6366f1" opacity="0.1"/>
+                        <rect x="160" y="120" width="80" height="60" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+                        <circle cx="180" cy="140" r="8" fill="#6366f1"/>
+                        <text x="200" y="145" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" fill="#1f2937">JOB</text>
+                        <circle cx="120" cy="100" r="20" fill="#ef4444"/>
+                        <circle cx="140" cy="95" r="15" fill="#f59e0b"/>
+                        <circle cx="280" cy="110" r="18" fill="#10b981"/>
+                        <circle cx="300" cy="180" r="12" fill="#8b5cf6"/>
+                        <rect x="100" y="200" width="200" height="4" rx="2" fill="#e5e7eb"/>
+                        <rect x="100" y="210" width="160" height="4" rx="2" fill="#e5e7eb"/>
+                        <rect x="100" y="220" width="180" height="4" rx="2" fill="#e5e7eb"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <h2>Encontre sua próxima oportunidade</h2>
+            <div class="search-form">
+                <div class="search-input-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="job-search" placeholder="Cargo, palavra-chave ou empresa">
+                </div>
+                <div class="search-input-group">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="location-search" placeholder="Cidade ou estado">
+                </div>
+                <button class="search-button" onclick="searchJobs()">
+                    <i class="fas fa-search"></i>
+                    Buscar Vagas
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs -->
+    <section class="featured-jobs">
+        <div class="container">
+            <h2>Vagas em Destaque</h2>
+            <div class="jobs-grid" id="featured-jobs-grid">
+                <!-- Jobs will be loaded dynamically -->
+            </div>
+            <div class="text-center">
+                <a href="jobs.html" class="view-all-button">Ver Todas as Vagas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section class="companies-section">
+        <div class="container">
+            <h2>Empresas Parceiras</h2>
+            <div class="companies-grid" id="companies-grid">
+                <!-- Companies will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EMPREGOAKI</h3>
+                    <p>Conectando talentos e oportunidades em todo o Brasil.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Candidatos</h4>
+                    <ul>
+                        <li><a href="jobs.html">Buscar Vagas</a></li>
+                        <li><a href="#">Cadastrar Currículo</a></li>
+                        <li><a href="#">Dicas de Carreira</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Empresas</h4>
+                    <ul>
+                        <li><a href="#">Anunciar Vaga</a></li>
+                        <li><a href="companies.html">Perfil da Empresa</a></li>
+                        <li><a href="#">Soluções RH</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EmpregoAki. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

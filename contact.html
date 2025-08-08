@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - EmpregoAki</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">EMPREGOAKI</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">INICIAL</a>
+                <a href="jobs.html" class="nav-link">SOLUÇÕES</a>
+                <a href="companies.html" class="nav-link">EMPREENDIMENTOS</a>
+                <a href="about.html" class="nav-link">ÍNDICES</a>
+                <a href="contact.html" class="nav-link active">SOBRE</a>
+                <a href="#" class="nav-link">CADASTRE-SE</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Entre em Contato</h1>
+            <p>Estamos aqui para ajudar você a encontrar as melhores oportunidades</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Fale Conosco</h2>
+                    <p>Tem alguma dúvida, sugestão ou precisa de ajuda? Nossa equipe está pronta para atendê-lo.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Email</h3>
+                                <p>contato@empregoaki.com.br</p>
+                                <p>Resposta em até 24 horas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Telefone</h3>
+                                <p>(11) 99999-9999</p>
+                                <p>Seg a Sex, 9h às 18h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Endereço</h3>
+                                <p>Av. Paulista, 1000</p>
+                                <p>São Paulo, SP - 01310-100</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>WhatsApp</h3>
+                                <p>(11) 99999-9999</p>
+                                <p>Atendimento rápido</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <h2>Envie sua Mensagem</h2>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="candidato">Sou candidato e preciso de ajuda</option>
+                                <option value="empresa">Sou empresa e quero anunciar vagas</option>
+                                <option value="suporte">Suporte técnico</option>
+                                <option value="parceria">Proposta de parceria</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Descreva sua dúvida ou solicitação..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Desejo receber novidades e ofertas especiais por email
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                Concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a> *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Como me cadastro como candidato?</h3>
+                    <p>Clique em "Cadastre-se" no menu superior e preencha seus dados. É gratuito e você já pode começar a se candidatar às vagas.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Como uma empresa pode anunciar vagas?</h3>
+                    <p>Entre em contato conosco através do formulário ou email. Nossa equipe comercial entrará em contato para apresentar nossos planos.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>É gratuito para candidatos?</h3>
+                    <p>Sim! O cadastro e candidatura às vagas são completamente gratuitos para candidatos.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Como posso acompanhar minhas candidaturas?</h3>
+                    <p>Após se cadastrar, você terá acesso a um painel onde pode acompanhar o status de todas suas candidaturas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EMPREGOAKI</h3>
+                    <p>Conectando talentos e oportunidades em todo o Brasil.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Candidatos</h4>
+                    <ul>
+                        <li><a href="jobs.html">Buscar Vagas</a></li>
+                        <li><a href="#">Cadastrar Currículo</a></li>
+                        <li><a href="#">Dicas de Carreira</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Empresas</h4>
+                    <ul>
+                        <li><a href="#">Anunciar Vaga</a></li>
+                        <li><a href="companies.html">Perfil da Empresa</a></li>
+                        <li><a href="#">Soluções RH</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EmpregoAki. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Form validation
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value.trim();
+            const terms = document.getElementById('terms').checked;
+            
+            if (!name || !email || !subject || !message || !terms) {
+                alert('Por favor, preencha todos os campos obrigatórios e aceite os termos.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Por favor, insira um email válido.');
+                return;
+            }
+            
+            // Simulate form submission
+            const submitButton = this.querySelector('.submit-button');
+            const originalText = submitButton.innerHTML;
+            
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                this.reset();
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

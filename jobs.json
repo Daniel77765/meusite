@@ -1,0 +1,531 @@
+[
+  {
+    "id": 1,
+    "title": "Desenvolvedor Full Stack",
+    "company": "TechBrasil",
+    "location": "São Paulo, SP",
+    "salary": "R$ 8.000 - R$ 12.000",
+    "type": "CLT",
+    "level": "pleno",
+    "category": "tecnologia",
+    "postedDays": 2,
+    "description": "Buscamos um desenvolvedor full stack experiente para integrar nossa equipe de desenvolvimento. O profissional será responsável pelo desenvolvimento de aplicações web completas, desde o front-end até o back-end, utilizando tecnologias modernas e metodologias ágeis.",
+    "responsibilities": [
+      "Desenvolver aplicações web completas (front-end e back-end)",
+      "Participar da arquitetura e definição técnica dos projetos",
+      "Colaborar com equipes multidisciplinares",
+      "Realizar testes e manutenção de código",
+      "Implementar melhorias de performance e segurança"
+    ],
+    "requirements": [
+      "Experiência com JavaScript, Node.js, React",
+      "Conhecimento em bancos de dados SQL e NoSQL",
+      "Experiência com Git e metodologias ágeis",
+      "Inglês intermediário",
+      "Ensino superior em área relacionada"
+    ],
+    "benefits": [
+      "Vale refeição",
+      "Vale transporte",
+      "Plano de saúde",
+      "Plano odontológico",
+      "Horário flexível",
+      "Home office híbrido"
+    ],
+    "skills": ["JavaScript", "React", "Node.js", "SQL", "Git"],
+    "companyDescription": "A TechBrasil é uma empresa de tecnologia especializada em soluções inovadoras para o mercado brasileiro."
+  },
+  {
+    "id": 2,
+    "title": "Analista de Marketing Digital",
+    "company": "Marketing Pro",
+    "location": "Rio de Janeiro, RJ",
+    "salary": "R$ 5.000 - R$ 7.500",
+    "type": "CLT",
+    "level": "pleno",
+    "category": "marketing",
+    "postedDays": 1,
+    "description": "Procuramos um analista de marketing digital para gerenciar campanhas online, análise de métricas e estratégias de crescimento. O profissional trabalhará com diversas ferramentas de marketing e será responsável por otimizar a presença digital da empresa.",
+    "responsibilities": [
+      "Gerenciar campanhas de marketing digital",
+      "Analisar métricas e KPIs de performance",
+      "Criar estratégias de crescimento online",
+      "Gerenciar redes sociais e conteúdo",
+      "Colaborar com equipe de vendas e produto"
+    ],
+    "requirements": [
+      "Experiência em marketing digital",
+      "Conhecimento em Google Ads e Facebook Ads",
+      "Experiência com Google Analytics",
+      "Conhecimento em SEO/SEM",
+      "Graduação em Marketing ou áreas afins"
+    ],
+    "benefits": [
+      "Vale refeição",
+      "Vale transporte",
+      "Plano de saúde",
+      "Participação nos lucros",
+      "Treinamentos e certificações"
+    ],
+    "skills": ["Google Ads", "Facebook Ads", "Analytics", "SEO", "Social Media"],
+    "companyDescription": "Marketing Pro é uma agência especializada em marketing digital com foco em resultados mensuráveis."
+  },
+  {
+    "id": 3,
+    "title": "Gerente de Vendas",
+    "company": "VendaMais",
+    "location": "Belo Horizonte, MG",
+    "salary": "R$ 6.000 - R$ 10.000 + comissão",
+    "type": "CLT",
+    "level": "senior",
+    "category": "vendas",
+    "postedDays": 3,
+    "description": "Estamos em busca de um gerente de vendas experiente para liderar nossa equipe comercial. O profissional será responsável por desenvolver estratégias de vendas, gerenciar a equipe e alcançar as metas estabelecidas pela empresa.",
+    "responsibilities": [
+      "Liderar e gerenciar equipe de vendas",
+      "Desenvolver estratégias comerciais",
+      "Acompanhar indicadores de performance",
+      "Prospectar novos clientes e mercados",
+      "Negociar contratos e fechamentos"
+    ],
+    "requirements": [
+      "Experiência comprovada em vendas B2B",
+      "Experiência em liderança de equipe",
+      "Conhecimento em CRM",
+      "Excelente capacidade de comunicação",
+      "Superior completo"
+    ],
+    "benefits": [
+      "Comissão atrativa",
+      "Vale refeição",
+      "Vale transporte",
+      "Plano de saúde",
+      "Carro da empresa"
+    ],
+    "skills": ["Vendas B2B", "Liderança", "CRM", "Negociação", "Gestão"],
+    "companyDescription": "VendaMais é uma empresa consolidada no mercado de soluções empresariais com foco em crescimento sustentável."
+  },
+  {
+    "id": 4,
+    "title": "Designer UX/UI",
+    "company": "DesignLab",
+    "location": "São Paulo, SP",
+    "salary": "R$ 6.500 - R$ 9.000",
+    "type": "CLT",
+    "level": "pleno",
+    "category": "tecnologia",
+    "postedDays": 1,
+    "description": "Buscamos um designer UX/UI talentoso para criar experiências digitais excepcionais. O profissional será responsável por pesquisar, projetar e testar interfaces que proporcionem a melhor experiência possível para os usuários.",
+    "responsibilities": [
+      "Conduzir pesquisas de usuário",
+      "Criar wireframes e protótipos",
+      "Desenvolver interfaces visuais",
+      "Realizar testes de usabilidade",
+      "Colaborar com equipes de desenvolvimento"
+    ],
+    "requirements": [
+      "Experiência com Figma, Sketch ou Adobe XD",
+      "Conhecimento em metodologias de UX",
+      "Portfolio com casos de sucesso",
+      "Conhecimento básico de HTML/CSS",
+      "Graduação em Design ou área relacionada"
+    ],
+    "benefits": [
+      "Vale refeição",
+      "Vale transporte",
+      "Plano de saúde",
+      "Horário flexível",
+      "Licenças de software",
+      "Ambiente criativo"
+    ],
+    "skills": ["Figma", "UX Research", "Prototyping", "UI Design", "Usability Testing"],
+    "companyDescription": "DesignLab é um estúdio de design especializado em criar experiências digitais inovadoras."
+  },
+  {
+    "id": 5,
+    "title": "Analista Financeiro",
+    "company": "FinanceCorpo",
+    "location": "São Paulo, SP",
+    "salary": "R$ 7.000 - R$ 9.500",
+    "type": "CLT",
+    "level": "pleno",
+    "category": "financeiro",
+    "postedDays": 4,
+    "description": "Procuramos um analista financeiro para integrar nossa equipe de controladoria. O profissional será responsável por análises financeiras, relatórios gerenciais e apoio na tomada de decisões estratégicas da empresa.",
+    "responsibilities": [
+      "Elaborar relatórios financeiros",
+      "Analisar indicadores de performance",
+      "Participar do planejamento orçamentário",
+      "Fazer análises de investimento",
+      "Apoiar na tomada de decisões"
+    ],
+    "requirements": [
+      "Graduação em Administração, Economia ou Contabilidade",
+      "Experiência com Excel avançado",
+      "Conhecimento em sistemas ERP",
+      "CRC ativo (desejável)",
+      "Inglês intermediário"
+    ],
+    "benefits": [
+      "Vale refeição",
+      "Vale transporte",
+      "Plano de saúde",
+      "Plano odontológico",
+      "Participação nos lucros"
+    ],
+    "skills": ["Excel Avançado", "ERP", "Análise Financeira", "Controladoria", "Orçamento"],
+    "companyDescription": "FinanceCorpo é uma consultoria financeira com vasta experiência no mercado corporativo."
+  },
+  {
+    "id": 6,
+    "title": "Coordenador de RH",
+    "company": "PeopleFirst",
+    "location": "Rio de Janeiro, RJ",
+    "salary": "R$ 8.000 - R$ 11.000",
+    "type": "CLT",
+    "level": "senior",
+    "category": "recursos-humanos",
+    "postedDays": 2,
+    "description": "Estamos em busca de um coordenador de RH para liderar os processos de gestão de pessoas. O profissional será responsável por recrutamento, desenvolvimento de colaboradores e implementação de políticas de RH.",
+    "responsibilities": [
+      "Liderar processos de recrutamento e seleção",
+      "Desenvolver políticas de RH",
+      "Gerenciar treinamentos e desenvolvimento",
+      "Conduzir avaliações de performance",
+      "Implementar programas de retenção"
+    ],
+    "requirements": [
+      "Graduação em Psicologia, Administração ou RH",
+      "Experiência em coordenação de equipe",
+      "Conhecimento em legislação trabalhista",
+      "Experiência com sistemas de RH",
+      "Excelente comunicação interpessoal"
+    ],
+    "benefits": [
+      "Vale refeição",
+      "Vale transporte",
+      "Plano de saúde",
+      "Plano odontológico",
+      "Auxílio educação"
+    ],
+    "skills": ["Recrutamento", "Desenvolvimento", "Legislação", "Liderança", "Comunicação"],
+    "companyDescription": "PeopleFirst é uma consultoria especializada em gestão de pessoas e desenvolvimento organizacional."
+  },
+  {
+    "id": 7,
+    "title": "Desenvolvedor Backend Python",
+    "company": "CodeMasters",
+    "location": "Curitiba, PR",
+    "salary": "R$ 9.000 - R$ 13.000",
+    "type": "PJ",
+    "level": "senior",
+    "category": "tecnologia",
+    "postedDays": 1,
+    "description": "Buscamos um desenvolvedor backend Python sênior para trabalhar em projetos desafiadores. O profissional será responsável por desenvolver APIs robustas, otimizar performance e implementar arquiteturas escaláveis.",
+    "responsibilities": [
+      "Desenvolver APIs RESTful com Python",
+      "Otimizar performance de aplicações",
+      "Implementar arquiteturas de microsserviços",
+      "Trabalhar com bancos de dados complexos",
+      "Mentorear desenvolvedores juniores"
+    ],
+    "requirements": [
+      "Sólida experiência com Python e frameworks",
+      "Experiência com Django ou Flask",
+      "Conhecimento em Docker e Kubernetes",
+      "Experiência com AWS ou Google Cloud",
+      "Inglês fluente"
+    ],
+    "benefits": [
+      "Remuneração PJ competitiva",
+      "Flexibilidade total de horário",
+      "Trabalho 100% remoto",
+      "Projetos internacionais",
+      "Equipamentos fornecidos"
+    ],
+    "skills": ["Python", "Django", "Flask", "Docker", "AWS", "Microservices"],
+    "companyDescription": "CodeMasters é uma software house especializada em soluções enterprise e projetos internacionais."
+  },
+  {
+    "id": 8,
+    "title": "Especialista em SEO",
+    "company": "WebSuccess",
+    "location": "Porto Alegre, RS",
+    "salary": "R$ 5.500 - R$ 8.000",
+    "type": "CLT",
+    "level": "pleno",
+    "category": "marketing",
+    "postedDays": 3,
+    "description": "Procuramos um especialista em SEO para otimizar a presença online de nossos clientes. O profissional será responsável por estratégias de SEO, análise de concorrência e implementação de melhorias técnicas.",
+    "responsibilities": [
+      "Desenvolver estratégias de SEO",
+      "Realizar auditorias técnicas de sites",
+      "Analisar concorrência e mercado",
+      "Otimizar conteúdo para mecanismos de busca",
+      "Acompanhar rankings e métricas"
+    ],
+    "requirements": [
+      "Experiência comprovada em SEO",
+      "Conhecimento em ferramentas como SEMrush, Ahrefs",
+      "Experiência com Google Analytics e Search Console",
+      "Conhecimentos técnicos de HTML/CSS",
+      "Certificações Google (desejável)"
+    ],
+    "benefits": [
+      "Vale refeição",
+      "Vale transporte",
+      "Plano de saúde",
+      "Cursos e certificações",
+      "Ambiente colaborativo"
+    ],
+    "skills": ["SEO", "Google Analytics", "SEMrush", "Ahrefs", "HTML/CSS"],
+    "companyDescription": "WebSuccess é uma agência digital especializada em SEO e marketing de conteúdo."
+  },
+  {
+    "id": 9,
+    "title": "Gerente de Projetos",
+    "company": "ProjectPro",
+    "location": "Brasília, DF",
+    "salary": "R$ 10.000 - R$ 14.000",
+    "type": "CLT",
+    "level": "senior",
+    "category": "administrativo",
+    "postedDays": 5,
+    "description": "Estamos em busca de um gerente de projetos experiente para liderar iniciativas estratégicas. O profissional será responsável por planejar, executar e monitorar projetos complexos, garantindo entrega no prazo e orçamento.",
+    "responsibilities": [
+      "Planejar e executar projetos complexos",
+      "Gerenciar equipes multidisciplinares",
+      "Controlar cronogramas e orçamentos",
+      "Comunicar-se com stakeholders",
+      "Implementar metodologias ágeis"
+    ],
+    "requirements": [
+      "Certificação PMP ou equivalente",
+      "Experiência em gerenciamento de projetos",
+      "Conhecimento em metodologias ágeis",
+      "Excelentes habilidades de comunicação",
+      "Superior completo"
+    ],
+    "benefits": [
+      "Vale refeição",
+      "Vale transporte",
+      "Plano de saúde",
+      "Plano odontológico",
+      "Participação nos lucros",
+      "Auxílio educação"
+    ],
+    "skills": ["PMP", "Scrum", "Agile", "MS Project", "Liderança"],
+    "companyDescription": "ProjectPro é uma consultoria especializada em gestão de projetos e transformação digital."
+  },
+  {
+    "id": 10,
+    "title": "Contador Sênior",
+    "company": "ContabilExpert",
+    "location": "Salvador, BA",
+    "salary": "R$ 6.500 - R$ 9.000",
+    "type": "CLT",
+    "level": "senior",
+    "category": "financeiro",
+    "postedDays": 2,
+    "description": "Buscamos um contador sênior para gerenciar a contabilidade de empresas de médio porte. O profissional será responsável por escrituração, análises contábeis e cumprimento de obrigações fiscais.",
+    "responsibilities": [
+      "Realizar escrituração contábil",
+      "Elaborar demonstrações financeiras",
+      "Cumprir obrigações fiscais",
+      "Fazer análises contábeis",
+      "Orientar equipe junior"
+    ],
+    "requirements": [
+      "CRC ativo e regular",
+      "Experiência em contabilidade empresarial",
+      "Conhecimento em legislação fiscal",
+      "Experiência com sistemas contábeis",
+      "Graduação em Ciências Contábeis"
+    ],
+    "benefits": [
+      "Vale refeição",
+      "Vale transporte",
+      "Plano de saúde",
+      "Plano odontológico",
+      "Participação nos lucros"
+    ],
+    "skills": ["Contabilidade", "Legislação Fiscal", "DRE", "Balanço", "SPED"],
+    "companyDescription": "ContabilExpert é um escritório de contabilidade com mais de 20 anos de experiência."
+  },
+  {
+    "id": 11,
+    "title": "Analista de Dados",
+    "company": "DataInsights",
+    "location": "São Paulo, SP",
+    "salary": "R$ 7.500 - R$ 10.500",
+    "type": "CLT",
+    "level": "pleno",
+    "category": "tecnologia",
+    "postedDays": 1,
+    "description": "Procuramos um analista de dados para transformar dados em insights estratégicos. O profissional trabalhará com grandes volumes de dados, criando relatórios e dashboards que apoiem a tomada de decisões.",
+    "responsibilities": [
+      "Analisar grandes volumes de dados",
+      "Criar dashboards e relatórios",
+      "Desenvolver modelos estatísticos",
+      "Colaborar com diferentes áreas de negócio",
+      "Automatizar processos de análise"
+    ],
+    "requirements": [
+      "Experiência com SQL avançado",
+      "Conhecimento em Python ou R",
+      "Experiência com Power BI ou Tableau",
+      "Conhecimentos estatísticos",
+      "Graduação em áreas quantitativas"
+    ],
+    "benefits": [
+      "Vale refeição",
+      "Vale transporte",
+      "Plano de saúde",
+      "Horário flexível",
+      "Treinamentos técnicos"
+    ],
+    "skills": ["SQL", "Python", "Power BI", "Tableau", "Estatística"],
+    "companyDescription": "DataInsights é uma empresa especializada em soluções de business intelligence e analytics."
+  },
+  {
+    "id": 12,
+    "title": "Especialista em E-commerce",
+    "company": "ShopOnline",
+    "location": "São Paulo, SP",
+    "salary": "R$ 6.000 - R$ 8.500",
+    "type": "CLT",
+    "level": "pleno",
+    "category": "vendas",
+    "postedDays": 4,
+    "description": "Estamos buscando um especialista em e-commerce para gerenciar operações online e otimizar vendas digitais. O profissional será responsável por estratégias de conversão, gestão de marketplace e análise de performance.",
+    "responsibilities": [
+      "Gerenciar operações de e-commerce",
+      "Otimizar taxa de conversão",
+      "Gerenciar marketplaces",
+      "Analisar métricas de vendas",
+      "Implementar estratégias de CRO"
+    ],
+    "requirements": [
+      "Experiência em e-commerce",
+      "Conhecimento em plataformas como Vtex, Magento",
+      "Experiência com Google Analytics",
+      "Conhecimento em marketplaces",
+      "Graduação em Marketing ou áreas afins"
+    ],
+    "benefits": [
+      "Vale refeição",
+      "Vale transporte",
+      "Plano de saúde",
+      "Participação nos lucros",
+      "Desconto em produtos"
+    ],
+    "skills": ["E-commerce", "Vtex", "Google Analytics", "CRO", "Marketplace"],
+    "companyDescription": "ShopOnline é uma empresa líder em soluções de e-commerce no mercado brasileiro."
+  },
+  {
+    "id": 13,
+    "title": "Engenheiro de Software",
+    "company": "SoftwareHouse",
+    "location": "Florianópolis, SC",
+    "salary": "R$ 11.000 - R$ 16.000",
+    "type": "PJ",
+    "level": "senior",
+    "category": "tecnologia",
+    "postedDays": 2,
+    "description": "Buscamos um engenheiro de software sênior para desenvolver soluções complexas e liderar projetos técnicos. O profissional trabalhará com arquiteturas avançadas e tecnologias de ponta.",
+    "responsibilities": [
+      "Desenvolver soluções de software complexas",
+      "Liderar projetos técnicos",
+      "Definir arquiteturas de sistema",
+      "Mentorear desenvolvedores",
+      "Participar de code reviews"
+    ],
+    "requirements": [
+      "Graduação em Engenharia ou Ciência da Computação",
+      "Experiência sólida em desenvolvimento",
+      "Conhecimento em múltiplas linguagens",
+      "Experiência com arquiteturas distribuídas",
+      "Inglês fluente"
+    ],
+    "benefits": [
+      "Remuneração PJ atrativa",
+      "Trabalho remoto",
+      "Flexibilidade de horário",
+      "Projetos desafiadores",
+      "Ambiente inovador"
+    ],
+    "skills": ["Java", "Python", "Microservices", "Cloud", "Architecture"],
+    "companyDescription": "SoftwareHouse desenvolve soluções inovadoras para empresas de diferentes setores."
+  },
+  {
+    "id": 14,
+    "title": "Coordenador de Marketing",
+    "company": "BrandMakers",
+    "location": "Rio de Janeiro, RJ",
+    "salary": "R$ 8.500 - R$ 12.000",
+    "type": "CLT",
+    "level": "senior",
+    "category": "marketing",
+    "postedDays": 3,
+    "description": "Procuramos um coordenador de marketing para liderar estratégias de marca e campanhas. O profissional será responsável por coordenar equipe, desenvolver campanhas e analisar resultados de marketing.",
+    "responsibilities": [
+      "Coordenar equipe de marketing",
+      "Desenvolver estratégias de marca",
+      "Planejar e executar campanhas",
+      "Analisar ROI de campanhas",
+      "Gerenciar orçamento de marketing"
+    ],
+    "requirements": [
+      "Graduação em Marketing ou Publicidade",
+      "Experiência em coordenação de equipe",
+      "Conhecimento em marketing digital",
+      "Experiência com ferramentas de automação",
+      "Inglês intermediário"
+    ],
+    "benefits": [
+      "Vale refeição",
+      "Vale transporte",
+      "Plano de saúde",
+      "Plano odontológico",
+      "Participação nos lucros",
+      "Ambiente criativo"
+    ],
+    "skills": ["Marketing Strategy", "Brand Management", "Team Leadership", "ROI Analysis", "Automation"],
+    "companyDescription": "BrandMakers é uma agência de marketing focada em construção de marcas fortes."
+  },
+  {
+    "id": 15,
+    "title": "Estagiário de TI",
+    "company": "TechStart",
+    "location": "São Paulo, SP",
+    "salary": "R$ 1.200 + benefícios",
+    "type": "estagio",
+    "level": "junior",
+    "category": "tecnologia",
+    "postedDays": 1,
+    "description": "Oferecemos uma oportunidade de estágio em TI para estudantes interessados em desenvolvimento e suporte técnico. O estagiário trabalhará em projetos reais e terá mentoria especializada.",
+    "responsibilities": [
+      "Apoiar desenvolvimento de aplicações",
+      "Realizar testes de software",
+      "Documentar processos técnicos",
+      "Participar de reuniões de equipe",
+      "Aprender novas tecnologias"
+    ],
+    "requirements": [
+      "Cursando superior em TI ou áreas afins",
+      "Conhecimentos básicos de programação",
+      "Inglês básico",
+      "Vontade de aprender",
+      "Disponibilidade de 6 horas/dia"
+    ],
+    "benefits": [
+      "Bolsa auxílio",
+      "Vale transporte",
+      "Vale refeição",
+      "Mentoria especializada",
+      "Possibilidade de efetivação"
+    ],
+    "skills": ["Programação", "HTML", "CSS", "JavaScript", "SQL"],
+    "companyDescription": "TechStart é uma startup focada em formar novos talentos em tecnologia."
+  }
+]

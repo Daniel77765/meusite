@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Vaga - EmpregoAki</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">EMPREGOAKI</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">INICIAL</a>
+                <a href="jobs.html" class="nav-link">SOLUÇÕES</a>
+                <a href="companies.html" class="nav-link">EMPREENDIMENTOS</a>
+                <a href="about.html" class="nav-link">ÍNDICES</a>
+                <a href="contact.html" class="nav-link">SOBRE</a>
+                <a href="#" class="nav-link">CADASTRE-SE</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Job Detail Content -->
+    <section class="job-detail">
+        <div class="container">
+            <div class="job-detail-header">
+                <button class="back-button" onclick="history.back()">
+                    <i class="fas fa-arrow-left"></i>
+                    Voltar
+                </button>
+            </div>
+            
+            <div class="job-detail-content" id="job-detail-content">
+                <!-- Job details will be loaded dynamically -->
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    Carregando detalhes da vaga...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EMPREGOAKI</h3>
+                    <p>Conectando talentos e oportunidades em todo o Brasil.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Candidatos</h4>
+                    <ul>
+                        <li><a href="jobs.html">Buscar Vagas</a></li>
+                        <li><a href="#">Cadastrar Currículo</a></li>
+                        <li><a href="#">Dicas de Carreira</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Empresas</h4>
+                    <ul>
+                        <li><a href="#">Anunciar Vaga</a></li>
+                        <li><a href="companies.html">Perfil da Empresa</a></li>
+                        <li><a href="#">Soluções RH</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EmpregoAki. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Load job detail based on URL parameter
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const jobId = urlParams.get('id');
+            
+            if (jobId) {
+                loadJobDetail(jobId);
+            } else {
+                document.getElementById('job-detail-content').innerHTML = `
+                    <div class="error-message">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h2>Vaga não encontrada</h2>
+                        <p>A vaga solicitada não foi encontrada ou não existe mais.</p>
+                        <a href="jobs.html" class="cta-button">Ver Todas as Vagas</a>
+                    </div>
+                `;
+            }
+        });
+
+        async function loadJobDetail(jobId) {
+            try {
+                const response = await fetch('jobs.json');
+                const jobs = await response.json();
+                const job = jobs.find(j => j.id === parseInt(jobId));
+                
+                if (job) {
+                    displayJobDetail(job);
+                } else {
+                    throw new Error('Job not found');
+                }
+            } catch (error) {
+                document.getElementById('job-detail-content').innerHTML = `
+                    <div class="error-message">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h2>Erro ao carregar vaga</h2>
+                        <p>Não foi possível carregar os detalhes da vaga. Tente novamente mais tarde.</p>
+                        <a href="jobs.html" class="cta-button">Ver Todas as Vagas</a>
+                    </div>
+                `;
+            }
+        }
+
+        function displayJobDetail(job) {
+            document.title = `${job.title} - ${job.company} - EmpregoAki`;
+            
+            document.getElementById('job-detail-content').innerHTML = `
+                <div class="job-header">
+                    <div class="job-info">
+                        <h1>${job.title}</h1>
+                        <div class="company-info">
+                            <h2>${job.company}</h2>
+                            <div class="job-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> ${job.location}</span>
+                                <span><i class="fas fa-clock"></i> ${job.type}</span>
+                                <span><i class="fas fa-calendar"></i> Publicado há ${job.postedDays} dias</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <button class="apply-button">
+                            <i class="fas fa-paper-plane"></i>
+                            Candidatar-se
+                        </button>
+                        <button class="save-button">
+                            <i class="far fa-bookmark"></i>
+                            Salvar Vaga
+                        </button>
+                    </div>
+                </div>
+
+                <div class="job-content">
+                    <div class="job-main">
+                        <div class="job-section">
+                            <h3>Descrição da Vaga</h3>
+                            <p>${job.description}</p>
+                        </div>
+
+                        <div class="job-section">
+                            <h3>Responsabilidades</h3>
+                            <ul>
+                                ${job.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
+                            </ul>
+                        </div>
+
+                        <div class="job-section">
+                            <h3>Requisitos</h3>
+                            <ul>
+                                ${job.requirements.map(req => `<li>${req}</li>`).join('')}
+                            </ul>
+                        </div>
+
+                        ${job.benefits && job.benefits.length > 0 ? `
+                        <div class="job-section">
+                            <h3>Benefícios</h3>
+                            <ul>
+                                ${job.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+                    </div>
+
+                    <div class="job-sidebar">
+                        <div class="job-summary">
+                            <h3>Resumo da Vaga</h3>
+                            <div class="summary-item">
+                                <strong>Salário:</strong>
+                                <span>${job.salary}</span>
+                            </div>
+                            <div class="summary-item">
+                                <strong>Localização:</strong>
+                                <span>${job.location}</span>
+                            </div>
+                            <div class="summary-item">
+                                <strong>Tipo de Contrato:</strong>
+                                <span>${job.type}</span>
+                            </div>
+                            <div class="summary-item">
+                                <strong>Nível:</strong>
+                                <span>${job.level}</span>
+                            </div>
+                            <div class="summary-item">
+                                <strong>Categoria:</strong>
+                                <span>${job.category}</span>
+                            </div>
+                        </div>
+
+                        <div class="company-card">
+                            <h3>Sobre a Empresa</h3>
+                            <h4>${job.company}</h4>
+                            <p>${job.companyDescription || 'Empresa comprometida com a excelência e o desenvolvimento profissional de seus colaboradores.'}</p>
+                            <a href="company-profile.html?name=${encodeURIComponent(job.company)}" class="company-link">
+                                Ver Perfil da Empresa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

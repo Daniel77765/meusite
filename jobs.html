@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas - EmpregoAki</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">EMPREGOAKI</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">INICIAL</a>
+                <a href="jobs.html" class="nav-link active">SOLUÇÕES</a>
+                <a href="companies.html" class="nav-link">EMPREENDIMENTOS</a>
+                <a href="about.html" class="nav-link">ÍNDICES</a>
+                <a href="contact.html" class="nav-link">SOBRE</a>
+                <a href="#" class="nav-link">CADASTRE-SE</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Vagas Disponíveis</h1>
+            <p>Encontre a oportunidade perfeita para sua carreira</p>
+        </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section class="search-filters">
+        <div class="container">
+            <div class="search-form">
+                <div class="search-input-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="job-search-filter" placeholder="Cargo, palavra-chave ou empresa">
+                </div>
+                <div class="search-input-group">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="location-filter" placeholder="Cidade ou estado">
+                </div>
+                <button class="search-button" onclick="applyFilters()">
+                    <i class="fas fa-search"></i>
+                    Filtrar
+                </button>
+            </div>
+            
+            <div class="filters-row">
+                <div class="filter-group">
+                    <label>Categoria</label>
+                    <select id="category-filter">
+                        <option value="">Todas as categorias</option>
+                        <option value="tecnologia">Tecnologia</option>
+                        <option value="vendas">Vendas</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="administrativo">Administrativo</option>
+                        <option value="financeiro">Financeiro</option>
+                        <option value="recursos-humanos">Recursos Humanos</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Tipo de Contrato</label>
+                    <select id="contract-filter">
+                        <option value="">Todos os tipos</option>
+                        <option value="clt">CLT</option>
+                        <option value="pj">PJ</option>
+                        <option value="estagio">Estágio</option>
+                        <option value="freelance">Freelance</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Experiência</label>
+                    <select id="experience-filter">
+                        <option value="">Qualquer nível</option>
+                        <option value="junior">Júnior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Sênior</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Results -->
+    <section class="jobs-results">
+        <div class="container">
+            <div class="results-header">
+                <h2 id="results-count">Carregando vagas...</h2>
+                <div class="sort-options">
+                    <label>Ordenar por:</label>
+                    <select id="sort-filter">
+                        <option value="date">Mais recentes</option>
+                        <option value="salary">Maior salário</option>
+                        <option value="relevance">Relevância</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="jobs-list" id="jobs-list">
+                <!-- Jobs will be loaded dynamically -->
+            </div>
+            
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be generated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EMPREGOAKI</h3>
+                    <p>Conectando talentos e oportunidades em todo o Brasil.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Candidatos</h4>
+                    <ul>
+                        <li><a href="jobs.html">Buscar Vagas</a></li>
+                        <li><a href="#">Cadastrar Currículo</a></li>
+                        <li><a href="#">Dicas de Carreira</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Empresas</h4>
+                    <ul>
+                        <li><a href="#">Anunciar Vaga</a></li>
+                        <li><a href="companies.html">Perfil da Empresa</a></li>
+                        <li><a href="#">Soluções RH</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EmpregoAki. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="jobs.js"></script>
+</body>
+</html>

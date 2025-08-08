@@ -1,0 +1,9 @@
+# Ignorar arquivos do Replit
+.replit
+replit.md
+
+# Ignorar arquivos temporários
+*.log
+*.tmp
+__pycache__/
+node_modules/
